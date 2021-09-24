@@ -19,6 +19,8 @@ def main():
         number_guessed = int(number_guessed)
     except:
         print("{0} is not an integer.".format(number_guessed))
+    finally:
+        print("")
 
     if number_guessed == random_number:
         print("You guessed the number!")
