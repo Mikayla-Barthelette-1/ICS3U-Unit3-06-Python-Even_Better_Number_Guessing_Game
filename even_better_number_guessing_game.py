@@ -17,10 +17,8 @@ def main():
     random_number = random.randint(0, 9)  # a number between 0 and 9
     try:
         number_guessed = int(number_guessed)
-    except:
+    except Exception:
         print("{0} is not an integer.".format(number_guessed))
-    finally:
-        print("")
 
     if number_guessed == random_number:
         print("You guessed the number!")
